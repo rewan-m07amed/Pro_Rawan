@@ -81,19 +81,19 @@ document.addEventListener("DOMContentLoaded", () => {
             title: ">> ABOUT",
             cmd: "> Loading profile...",
             text: "I am a Mechatronics Engineering student at Ain Shams University, specializing in Bio-Mechatronics, with a strong interest in developing assistive and rehabilitation technologies that address real human needs.\n\nAs a USAID Scholar, I gained valuable leadership experience and worked within diverse environments that supported my academic and personal growth. I also applied my interest in biomechanics by working with children with special needs, designing simple exercises to improve fine motor skills.\n\nTechnically, I have worked on projects including gait analysis, ROV design, and automotive systems, building a solid foundation in engineering through hands-on experience in modeling, simulation, embedded systems, and mechanical design. I currently maintain a GPA of 3.3 in a rigorous engineering program and was recognized with an Excellence Award from the university for my academic performance.\n\nBeyond academics, I served as Chairwoman of the IEEE Ain Shams Student Branch, where I helped organize technical events reaching over 2,000 students and fostered collaboration and knowledge sharing.",
-            image: "images/about_rawan.jpg"
+            image: "about_rawan.jpg"
         },
         motivation: {
             title: ">> MOTIVATION",
             cmd: "> Executing motive....",
             text: "My motivation comes from growing up with my mother, a specialist in special needs education. Watching her work closely with children helped me understand the challenges they face and how meaningful support can improve their daily lives. Over time, I became interested in how engineering could help address these challenges. This is what led me to choose Bio-Mechatronics, where I can apply engineering to real human needs, particularly in rehabilitation and assistive technologies.",
-            image: "images/motivation_rawan.jpg"
+            image: "motivation_rawan.jpg"
         },
         vision: {
             title: ">> VISION",
             cmd: "> Loading vision....",
             text: "I aspire to create meaningful impact by applying engineering to improve people’s lives, with a focus on making technology more accessible, inclusive, and human-centered.\n\nI believe in a future where innovation supports not only advancement, but also equality, where individuals have access to the tools and opportunities they need to live healthier and more independent lives. Through my work, I aim to contribute to solutions that are practical, affordable, and designed with real human needs in mind.\n\nI am also driven by a desire to connect with different cultures and perspectives, learning from diverse experiences and bringing those insights back to my community. I believe that understanding and collaboration across cultures are essential for building more effective and inclusive technologies.\n\nUltimately, I hope to contribute to a world that is not only technologically advanced, but also more connected, compassionate, and supportive of people’s well-being.",
-            image: "images/vision_rawan.jpg"
+            image: "vision_rawan.jpg"
         }
     };
 
