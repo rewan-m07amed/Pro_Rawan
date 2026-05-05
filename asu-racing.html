@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASU RACING // DATA_LOG</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="project-page">
+    <div class="gears-container">
+        <div class="gear gear-1">⚙️</div>
+        <div class="gear gear-2">⚙️</div>
+    </div>
+
+    <div class="project-container">
+
+        <!-- شريط التحكم واللوجو -->
+        <div class="project-header"
+            style="border-bottom: 2px dashed rgba(0, 255, 255, 0.4); padding-bottom: 20px; margin-bottom: 40px;">
+            <a href="index.html" class="back-btn" style="display: inline-block; margin-bottom: 20px;">&lt;&lt;
+                RETURN_TO_MAIN</a>
+
+            <div
+                style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+                <h1 class="project-title glitch-text" style="margin: 0;">ASU RACING // Formula Student</h1>
+
+                <!-- اللوجو بالكلاس الجديد المميز (الحجم الكبير والحركة) -->
+                <img src="images/asu-racing-logo.jpg" alt="ASU Racing Logo" class="cyber-logo">
+            </div>
+        </div>
+
+        <!-- 1. شريط الخلاصة -->
+        <div class="quick-info-bar">
+            <div class="info-item">
+                <span class="info-label">CORE_FOCUS</span>
+                <span class="info-value">Race Car Dynamics & Design</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">SOFTWARE_STACK</span>
+                <span class="info-value">MATLAB/Simulink, FEA Tools</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">TEAM_AFFILIATION</span>
+                <span class="info-value">ASU Racing Team</span>
+            </div>
+        </div>
+
+        <!-- 2. الأرقام والإنجازات (مساحة مريحة للعين) -->
+        <div class="metrics-grid">
+            <div class="metric-box">
+                <h3 class="metric-num">FEA</h3>
+                <p class="metric-desc">Space Frame Stress Analysis</p>
+            </div>
+            <div class="metric-box">
+                <h3 class="metric-num">SIM</h3>
+                <p class="metric-desc">Dynamic Brakes Model</p>
+            </div>
+            <div class="metric-box">
+                <h3 class="metric-num">LOAD</h3>
+                <p class="metric-desc">Traction & Load Transfer</p>
+            </div>
+        </div>
+
+        <!-- 3. صورة الغلاف الرئيسية (بإطار وتأثير نيون) -->
+        <div class="project-hero-img">
+            <img src="images/asu-racing-hero.jpg" alt="ASU Racing Project - Race Car Design">
+        </div>
+
+        <!-- فاصل تقني أنيق يفصل بين الصور وبين بداية الشرح -->
+        <div
+            style="width: 100%; height: 1px; background: linear-gradient(90deg, transparent, rgba(0,255,255,0.3), transparent); margin: 60px 0;">
+        </div>
+
+        <!-- 4. مراحل المشروع (بلوكات الشرح الاحترافية) -->
+        <div class="project-phases">
+
+            <div class="phase-block">
+                <h3 class="phase-title"><span>&gt;</span> PHASE_01: DYNAMICS_OVERVIEW.sys</h3>
+                <p>
+                    Racing car design is a complex interplay of various factors, including
+                    <strong>aerodynamics</strong>, <strong>mechanics</strong>, and <strong>tire physics</strong>. To
+                    achieve optimal performance on the track, it is essential to consider how these elements interact to
+                    influence traction, acceleration, braking, and cornering.
+                </p>
+                <p>
+                    The foundational principle of racing car design is achieving maximum traction between the tires and
+                    the road, known as the <strong>Tyre contact patch</strong>. Additionally, the distribution of weight
+                    on each wheel (<strong>Wheel Loads</strong>) significantly impacts traction, influenced by dynamic
+                    factors like acceleration, braking, and cornering.
+                </p>
+            </div>
+
+            <div class="phase-block">
+                <h3 class="phase-title"><span>&gt;</span> PHASE_02: CHASSIS_STRUCTURE_FEA.exe</h3>
+                <p>
+                    A <strong>space frame chassis</strong> is a structural design based on the <strong>triangulation
+                        principle</strong>. This principle involves connecting structural elements in a triangular
+                    pattern to form a rigid and stable structure.
+                </p>
+                <p>
+                    Consisting of a three-dimensional lattice of interconnected metallic tubular bars, these elements
+                    are joined at nodes to form a rigid structure that can withstand <strong>twisting loads</strong>, as
+                    verified by our Finite Element Analysis (FEA).
+                </p>
+                <!-- صورة الشاسيه بإطار phase-img -->
+                <div class="phase-image-wrapper">
+                    <img src="images/asu-racing-chassis.png" alt="Space Frame Triangulation FEA" class="phase-img">
+                </div>
+            </div>
+
+            <div class="phase-block">
+                <h3 class="phase-title"><span>&gt;</span> PHASE_03: BRAKES_SYSTEM_MODELING.dat</h3>
+                <p>
+                    Developed a comprehensive dynamic model (<strong>Brakes_Model_2025</strong>) using
+                    <strong>Simulink</strong> to simulate the braking system's behavior and optimize stopping power.
+                </p>
+                <p>
+                    Conducted a trade-off analysis for caliper options, comparing <strong>Forged Dynalite
+                        Internal</strong> (Front) with options like Dynalite Single IIIA and Honda 600rr (Rear),
+                    balancing performance metrics against cost constraints.
+                </p>
+
+                <!-- صور السيميولينك والفرامل في شاشات Cyber Windows -->
+                <div class="phase-images-grid">
+                    <div class="cyber-window">
+                        <div class="window-header"><span>&gt; SIMULINK_MODEL.exe</span></div>
+                        <img src="images/asu-racing-simulink.jpg" alt="Brakes System Simulink Model">
+                    </div>
+
+                    <div class="cyber-window">
+                        <div class="window-header"><span>&gt; CALIPER_TRADE_OFF.csv</span></div>
+                        <img src="images/asu-racing-brakes.png" alt="Brakes Caliper Options Trade-off">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

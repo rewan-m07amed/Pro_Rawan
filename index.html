@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewan Mohamed | Mechatronics & 3D Design</title>
+    <meta name="description" content="Portfolio of Rewan Mohamed, Mechatronics Engineer & 3D Designer.">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Deep Background Mesh & Parallax -->
+    <!-- True Deep Background Container -->
+    <div class="minimal-lab-bg">
+        <!-- Atmospheric Fog -->
+        <div class="atmospheric-fog"></div>
+
+        <!-- Floating Mechanical Elements (Fixed Positions) -->
+        <div class="floating-mech-item mech-gear-set">
+            <svg viewBox="0 0 16 16" fill="currentColor" shape-rendering="crispEdges" width="100%" height="100%">
+                <path fill-rule="evenodd"
+                    d="M6 0 h4 v2 h4 v4 h2 v4 h-2 v4 h-4 v2 h-4 v-2 h-4 v-4 h-2 v-4 h2 v-4 h4 v-2 z M6 6 h4 v4 h-4 z" />
+            </svg>
+        </div>
+        <div class="floating-mech-item mech-gripper">
+            <svg viewBox="0 0 16 16" fill="currentColor" shape-rendering="crispEdges" width="100%" height="100%">
+                <path
+                    d="M6 0h4v6h-4V0z M4 6h8v2H4V6z M2 8h4v6H2V8z M10 8h4v6h-4V8z M4 14h2v2H4v-2z M10 14h2v2h-2v-2z" />
+            </svg>
+        </div>
+        <div class="floating-mech-item mech-microchip">
+            <svg viewBox="0 0 16 16" fill="currentColor" shape-rendering="crispEdges" width="100%" height="100%">
+                <path
+                    d="M4 4h8v8H4V4z M6 2h1v2H6V2z M9 2h1v2H9V2z M6 12h1v2H6v-2z M9 12h1v2H9v-2z M2 6h2v1H2V6z M2 9h2v1H2V9z M12 6h2v1h-2V6z M12 9h2v1h-2V9z" />
+            </svg>
+        </div>
+    </div>
+    <!-- Floating Cyber Navbar -->
+    <nav class="cyber-navbar veil-navbar">
+        <div class="nav-logo">&gt;&gt; REWAN_M</div>
+        <div class="nav-links">
+            <a href="#about" class="nav-item">ABOUT</a>
+            <a href="#projects" class="nav-item">PROJECTS</a>
+            <a href="#certificates" class="nav-item">CERTIFICATES</a>
+            <a href="#contact" class="nav-item">CONTACT</a>
+        </div>
+        <!-- Pixel Data Strip -->
+
+    </nav>
+
+    <main class="dashboard">
+        <!-- Floating Profile Banner -->
+        <header class="panel profile-banner" style="margin-top: 100px;">
+            <div class="panel-corners"></div>
+            <div class="profile-content">
+                <div class="avatar-container">
+                    <div class="radar-ring"></div>
+                    <div class="inner-ring"></div>
+                    <img src="rawan image.jpeg" alt="Rewan Mohamed" class="profile-image">
+                </div>
+                <div class="profile-info">
+                    <div class="title-wrapper"
+                        style="display: flex; align-items: flex-end; gap: 20px; white-space: nowrap;">
+                        <h1 class="neon-text" style="margin-bottom: 0; font-size: clamp(2rem, 4vw, 3rem);">REWAN
+                            MOHAMED<span class="bixel-cursor">_</span></h1>
+
+                    </div>
+                    <h2 class="subtitle" style="margin-top: 10px;">MECHATRONICS ENGINEER <span class="divider">//</span>
+                        BIO-ENGINEER</h2>
+                    <div class="system-status quote-badge">
+                        <span class="status-label">&gt; CORE_DIRECTIVE:</span>
+                        <span class="quote-text">
+                            Tomorrow is uncertain, but the impact is eternal. Therein lies the meaning of life.<span
+                                class="quote-cursor">_</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Terminal Module (Interactive Command Line) -->
+        <section class="panel about-module" id="about">
+            <div class="panel-corners"></div>
+            <div class="panel-header">
+                <span class="panel-title" id="terminal-title">&gt;&gt; TERMINAL_LOG_01</span>
+                <span class="panel-controls">
+                    <!-- النقط التلاتة بالترتيب -->
+                    <i id="dot-about" class="indicator-dot"></i>
+                    <i id="dot-motivation" class="indicator-dot"></i>
+                    <i id="dot-vision" class="indicator-dot"></i>
+                </span>
+            </div>
+
+            <div class="terminal-wrapper">
+                <!-- 1. أزرار التحكم (التابات) اترفعوا فوق -->
+                <div class="terminal-controls top-tabs">
+                    <button class="cyber-tab active" data-target="about">
+                        <span class="tab-index">_01</span>
+                        <span class="tab-label">PROFILE.DAT</span>
+                    </button>
+                    <button class="cyber-tab" data-target="motivation">
+                        <span class="tab-index">_02</span>
+                        <span class="tab-label">MOTIVE.SH</span>
+                    </button>
+                    <button class="cyber-tab" data-target="vision">
+                        <span class="tab-index">_03</span>
+                        <span class="tab-label">VISION.SYS</span>
+                    </button>
+                </div>
+
+                <!-- 2. شاشة العرض الداخلية -->
+                <div class="terminal-display">
+                    <div class="terminal-top-bar">
+                        <span class="status-dot"></span>
+                        <span class="path-text">C:\REWAN_M\CORE_DATA&gt;</span>
+                    </div>
+
+                    <div class="display-layout">
+                        <!-- مساحة النص (دخلناها لجوا شوية) -->
+                        <div class="terminal-body" id="terminal-screen">
+                            <p class="cmd-text">&gt; Loading profile_data.exe...</p>
+                            <span id="typed-text"></span><span class="typing-cursor"></span>
+                        </div>
+
+                        <!-- 3. مساحة عرض الصورة بستايل سايبربانك -->
+                        <div class="terminal-image-container">
+                            <div class="cyber-scanline"></div>
+                            <!-- الصور دي هتتغير بالجافاسكريبت -->
+                            <img id="dynamic-image" src="about-img.jpg" alt="AI Generated Visual">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills Dashboard -->
+        <section class="panel skills-dashboard">
+            <div class="panel-corners"></div>
+            <div class="panel-header" style="flex-wrap: wrap; gap: 1rem;">
+                <span class="panel-title">&gt;&gt; CORE_CAPABILITIES</span>
+                <div class="gci-badge">[ &gt;&gt; GCI 2026 - MATSUO LAB (TOKYO): ACCEPTED ]</div>
+                <span class="panel-controls">
+                    <i></i><i></i><i></i>
+                </span>
+            </div>
+            <div class="skills-grid">
+
+                <!-- 1. Python -->
+                <div class="skill-item">
+                    <div class="skill-label">
+                        <span>PYTHON (PANDAS)</span>
+                        <div class="toggle">
+                            <input type="checkbox" id="t1" checked disabled>
+                            <label for="t1"></label>
+                        </div>
+                    </div>
+                    <div class="skill-desc"
+                        style="color: #8b9bb4; font-size: 0.75rem; margin-top: -5px; margin-bottom: 10px; font-family: monospace;">
+                        Data manipulation and exploratory data analysis.</div>
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 95%;"></div>
+                        <div class="progress-glow" style="width: 95%;"></div>
+                    </div>
+                </div>
+
+                <!-- 2. SQL -->
+                <div class="skill-item">
+                    <div class="skill-label">
+                        <span>SQL</span>
+                        <div class="toggle">
+                            <input type="checkbox" id="t2" checked disabled>
+                            <label for="t2"></label>
+                        </div>
+                    </div>
+                    <div class="skill-desc"
+                        style="color: #8b9bb4; font-size: 0.75rem; margin-top: -5px; margin-bottom: 10px; font-family: monospace;">
+                        Database management and structured query writing.</div>
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 90%;"></div>
+                        <div class="progress-glow" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <!-- 3. Tableau -->
+                <div class="skill-item">
+                    <div class="skill-label">
+                        <span>TABLEAU</span>
+                        <div class="toggle">
+                            <input type="checkbox" id="t3" checked disabled>
+                            <label for="t3"></label>
+                        </div>
+                    </div>
+                    <div class="skill-desc"
+                        style="color: #8b9bb4; font-size: 0.75rem; margin-top: -5px; margin-bottom: 10px; font-family: monospace;">
+                        Interactive data visualization and business intelligence.</div>
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                        <div class="progress-glow" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <!-- 4. SolidWorks -->
+                <div class="skill-item">
+                    <div class="skill-label">
+                        <span>SOLIDWORKS</span>
+                        <div class="toggle">
+                            <input type="checkbox" id="t4" checked disabled>
+                            <label for="t4"></label>
+                        </div>
+                    </div>
+                    <div class="skill-desc"
+                        style="color: #8b9bb4; font-size: 0.75rem; margin-top: -5px; margin-bottom: 10px; font-family: monospace;">
+                        3D CAD design and mechanical modeling.</div>
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 90%;"></div>
+                        <div class="progress-glow" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <!-- 5. MATLAB -->
+                <div class="skill-item">
+                    <div class="skill-label">
+                        <span>MATLAB</span>
+                        <div class="toggle">
+                            <input type="checkbox" id="t5" checked disabled>
+                            <label for="t5"></label>
+                        </div>
+                    </div>
+                    <div class="skill-desc"
+                        style="color: #8b9bb4; font-size: 0.75rem; margin-top: -5px; margin-bottom: 10px; font-family: monospace;">
+                        Algorithm development and numerical computing.</div>
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                        <div class="progress-glow" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <!-- 6. QTM -->
+                <div class="skill-item">
+                    <div class="skill-label">
+                        <span>QTM (KINEMATIC DATA)</span>
+                        <div class="toggle">
+                            <input type="checkbox" id="t6" checked disabled>
+                            <label for="t6"></label>
+                        </div>
+                    </div>
+                    <div class="skill-desc"
+                        style="color: #8b9bb4; font-size: 0.75rem; margin-top: -5px; margin-bottom: 10px; font-family: monospace;">
+                        3D motion capture and biomechanical analysis.</div>
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 80%;"></div>
+                        <div class="progress-glow" style="width: 80%;"></div>
+                    </div>
+                </div>
+
+                <!-- 7. MultiSim / LTSpice -->
+                <div class="skill-item">
+                    <div class="skill-label">
+                        <span>MULTISIM / LTSPICE</span>
+                        <div class="toggle">
+                            <input type="checkbox" id="t7" checked disabled>
+                            <label for="t7"></label>
+                        </div>
+                    </div>
+                    <div class="skill-desc"
+                        style="color: #8b9bb4; font-size: 0.75rem; margin-top: -5px; margin-bottom: 10px; font-family: monospace;">
+                        Electronic circuit simulation and design testing.</div>
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                        <div class="progress-glow" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- 10. Leadership & Project Management -->
+                <div class="skill-item">
+                    <div class="skill-label">
+                        <span>PROJECT MANAGEMENT</span>
+                        <div class="toggle">
+                            <input type="checkbox" id="t10" checked disabled>
+                            <label for="t10"></label>
+                        </div>
+                    </div>
+                    <div class="skill-desc"
+                        style="color: #8b9bb4; font-size: 0.75rem; margin-top: -5px; margin-bottom: 10px; font-family: monospace;">
+                        Team leadership and effective project execution.</div>
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 95%;"></div>
+                        <div class="progress-glow" style="width: 95%;"></div>
+                    </div>
+                </div>
+
+                <!-- 11. PR & Interregional Collaboration -->
+                <div class="skill-item">
+                    <div class="skill-label">
+                        <span>PR & COLLABORATION</span>
+                        <div class="toggle">
+                            <input type="checkbox" id="t11" checked disabled>
+                            <label for="t11"></label>
+                        </div>
+                    </div>
+                    <div class="skill-desc"
+                        style="color: #8b9bb4; font-size: 0.75rem; margin-top: -5px; margin-bottom: 10px; font-family: monospace;">
+                        Public speaking and developing global strategic partnerships.</div>
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 90%;"></div>
+                        <div class="progress-glow" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- Interactive Project Carousel -->
+        <section id="projects" class="panel projects-module">
+            <div class="panel-corners"></div>
+            <div class="panel-header">
+                <span class="panel-title">&gt;&gt; ARCHIVE_PROJECTS</span>
+            </div>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Project 1 -->
+                    <!-- Project 1 -->
+                    <div class="swiper-slide project-slide">
+                        <div class="project-card"
+                            style="display: flex; flex-direction: column; background: #06101d; border: 1px solid rgba(0, 243, 255, 0.2); height: 500px; overflow: hidden; border-radius: 8px;">
+
+                            <!-- حاوية الصورة: خليناها 50% من الكارت وعملنا زووم للوجو -->
+                            <div class="project-img-top"
+                                style="height: 50%; background: #fff; display: flex; align-items: center; justify-content: center; width: 100%; overflow: hidden;">
+                                <img src="images/asu-racing-logo.jpg" alt="ASU Racing"
+                                    style="width: 110%; height: 110%; object-fit: contain; transform: scale(1.3); transition: transform 0.3s ease;">
+                                <!-- transform: scale(1.3) هو اللي بيعمل الزووم اللي طلبتيه -->
+                            </div>
+
+                            <!-- منطقة البيانات: النصف السفلي متوزع بانتظام -->
+                            <div class="slide-content"
+                                style="height: 50%; padding: 25px; background: rgba(12, 16, 24, 0.95); display: flex; flex-direction: column; justify-content: space-between;">
+                                <div>
+                                    <h3
+                                        style="color: #ffb300; margin: 0 0 10px 0; font-family: 'Orbitron', sans-serif; font-size: 1.4rem;">
+                                        ASU RACING</h3>
+                                    <p style="color: #8b9bb4; font-size: 0.95rem; line-height: 1.5; margin: 0;">Formula
+                                        Student Engineering & Optimization</p>
+                                </div>
+
+                                <a href="asu-racing.html" class="cyber-btn"
+                                    style="width: fit-content; padding: 10px 25px; margin-top: 15px;">VIEW_DATA</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="swiper-slide project-slide">
+                        <div class="project-card">
+                            <div class="project-overlay"></div>
+                            <div class="slide-content">
+                                <h3>AQUAPHOTON</h3>
+                                <p>Underwater ROV Systems Design</p>
+                                <a href="aquaphoton.html" class="cyber-btn">VIEW_DATA</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="swiper-slide project-slide">
+                        <div class="project-card">
+                            <div class="project-overlay"></div>
+                            <div class="slide-content">
+                                <h3>RAVAN</h3>
+                                <p>Custom 3D Modeled Autonomous Robotics</p>
+                                <a href="ravan.html" class="cyber-btn">VIEW_DATA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 1. استدعاء مكتبة Swiper أولاً -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 2. سيكشن المشاريع (لازم يكون بره تاق السكريبت) -->
+    <div class="projects-module swiper">
+        <div class="swiper-wrapper">
+            <!-- الكروت بتاعتك هنا -->
+        </div>
+
+        <!-- الأسهم الجانبية -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- 3. استدعاء ملف البرمجة بتاعك في الآخر -->
+    <script src="script.js"></script>
+
+    <!-- 4. تفعيل الحركة (Navigation) -->
+    <script>
+        const swiper = new Swiper('.projects-module', {
+            loop: true,
+            // تفعيل الأسهم برمجياً
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // باقي إعداداتك (slidesPerView, pagination, etc.)
+        });
+    </script>
+
+    <!-- Interactive Certificates Carousel -->
+    <!-- Interactive Certificates Carousel -->
+    <section id="certificates" class="panel projects-module" style="margin-top: 50px;">
+        <div class="panel-corners"></div>
+        <div class="panel-header">
+            <span class="panel-title">&gt;&gt; ACADEMIC_ARCHIVE</span>
+        </div>
+
+        <!-- السلايدر الخاص بالشهادات -->
+        <div class="swiper certSwiper">
+            <div class="swiper-wrapper">
+
+                <!-- 1. NASA -->
+                <div class="swiper-slide project-slide">
+                    <div class="project-card"
+                        style="display: flex; flex-direction: column; background: #06101d; border: 1px solid rgba(0, 243, 255, 0.2); height: 500px; overflow: hidden; border-radius: 8px;">
+                        <div class="project-img-top"
+                            style="height: 85%; background: #02060c; display: flex; align-items: center; justify-content: center; width: 100%; overflow: hidden;">
+                            <img src="images/certificates/nasa-cert.jpeg" alt="NASA Space Apps"
+                                style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <div class="slide-content"
+                            style="height: 15%; padding: 15px; background: rgba(12, 16, 24, 0.95); display: flex; align-items: center; justify-content: center; border-top: 1px solid rgba(0, 243, 255, 0.1);">
+                            <h3
+                                style="color: #ffb300; margin: 0; font-family: 'Orbitron', sans-serif; font-size: 1.1rem; letter-spacing: 2px;">
+                                NASA_SPACE_APPS</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. ASU Excellence -->
+                <div class="swiper-slide project-slide">
+                    <div class="project-card"
+                        style="display: flex; flex-direction: column; background: #06101d; border: 1px solid rgba(0, 243, 255, 0.2); height: 500px; overflow: hidden; border-radius: 8px;">
+                        <div class="project-img-top"
+                            style="height: 85%; background: #02060c; display: flex; align-items: center; justify-content: center; width: 100%; overflow: hidden;">
+                            <img src="images/certificates/asu-excellence.jpeg" alt="ASU Excellence"
+                                style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <div class="slide-content"
+                            style="height: 15%; padding: 15px; background: rgba(12, 16, 24, 0.95); display: flex; align-items: center; justify-content: center; border-top: 1px solid rgba(0, 243, 255, 0.1);">
+                            <h3
+                                style="color: #ffb300; margin: 0; font-family: 'Orbitron', sans-serif; font-size: 1.1rem; letter-spacing: 2px;">
+                                ASU_EXCELLENCE</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. IELTS -->
+                <div class="swiper-slide project-slide">
+                    <div class="project-card"
+                        style="display: flex; flex-direction: column; background: #06101d; border: 1px solid rgba(0, 243, 255, 0.2); height: 500px; overflow: hidden; border-radius: 8px;">
+                        <div class="project-img-top"
+                            style="height: 85%; background: #02060c; display: flex; align-items: center; justify-content: center; width: 100%; overflow: hidden;">
+                            <img src="images/certificates/ielts-cert.jpeg" alt="IELTS"
+                                style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <div class="slide-content"
+                            style="height: 15%; padding: 15px; background: rgba(12, 16, 24, 0.95); display: flex; align-items: center; justify-content: center; border-top: 1px solid rgba(0, 243, 255, 0.1);">
+                            <h3
+                                style="color: #ffb300; margin: 0; font-family: 'Orbitron', sans-serif; font-size: 1.1rem; letter-spacing: 2px;">
+                                IELTS_B2_SCORE</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. AUC EUREKA -->
+                <div class="swiper-slide project-slide">
+                    <div class="project-card"
+                        style="display: flex; flex-direction: column; background: #06101d; border: 1px solid rgba(0, 243, 255, 0.2); height: 500px; overflow: hidden; border-radius: 8px;">
+                        <div class="project-img-top"
+                            style="height: 85%; background: #02060c; display: flex; align-items: center; justify-content: center; width: 100%; overflow: hidden;">
+                            <img src="images/certificates/auc-cert.jpeg" alt="AUC EUREKA"
+                                style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <div class="slide-content"
+                            style="height: 15%; padding: 15px; background: rgba(12, 16, 24, 0.95); display: flex; align-items: center; justify-content: center; border-top: 1px solid rgba(0, 243, 255, 0.1);">
+                            <h3
+                                style="color: #ffb300; margin: 0; font-family: 'Orbitron', sans-serif; font-size: 1.1rem; letter-spacing: 2px;">
+                                AUC_EUREKA_2024</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. ARM Microcontrollers -->
+                <div class="swiper-slide project-slide">
+                    <div class="project-card"
+                        style="display: flex; flex-direction: column; background: #06101d; border: 1px solid rgba(0, 243, 255, 0.2); height: 500px; overflow: hidden; border-radius: 8px;">
+                        <div class="project-img-top"
+                            style="height: 85%; background: #02060c; display: flex; align-items: center; justify-content: center; width: 100%; overflow: hidden;">
+                            <img src="images/certificates/arm-cert.jpeg" alt="ARM Microcontrollers"
+                                style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <div class="slide-content"
+                            style="height: 15%; padding: 15px; background: rgba(12, 16, 24, 0.95); display: flex; align-items: center; justify-content: center; border-top: 1px solid rgba(0, 243, 255, 0.1);">
+                            <h3
+                                style="color: #ffb300; margin: 0; font-family: 'Orbitron', sans-serif; font-size: 1.1rem; letter-spacing: 2px;">
+                                ARM_MICROCONTROLLERS</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. IDT Excellence -->
+                <div class="swiper-slide project-slide">
+                    <div class="project-card"
+                        style="display: flex; flex-direction: column; background: #06101d; border: 1px solid rgba(0, 243, 255, 0.2); height: 500px; overflow: hidden; border-radius: 8px;">
+                        <div class="project-img-top"
+                            style="height: 85%; background: #02060c; display: flex; align-items: center; justify-content: center; width: 100%; overflow: hidden;">
+                            <img src="images/certificates/idt-cert.jpeg" alt="IDT Excellence"
+                                style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <div class="slide-content"
+                            style="height: 15%; padding: 15px; background: rgba(12, 16, 24, 0.95); display: flex; align-items: center; justify-content: center; border-top: 1px solid rgba(0, 243, 255, 0.1);">
+                            <h3
+                                style="color: #ffb300; margin: 0; font-family: 'Orbitron', sans-serif; font-size: 1.1rem; letter-spacing: 2px;">
+                                IDT_EXCELLENCE</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- كود التشغيل المعزول مباشرة تحت السكشن -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const isolatedCertSwiper = new Swiper(".certSwiper", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                    rotate: 20,
+                    stretch: 0,
+                    depth: 250,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    320: { slidesPerView: 1.2 },
+                    768: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 }
+                },
+                pagination: {
+                    el: ".certSwiper .swiper-pagination",
+                    clickable: true,
+                },
+            });
+        });
+    </script>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-frame cyber-border">
+                <div class="contact-header">
+                    <h2 class="glitch-text" data-text="CONNECT_WITH_ME">CONNECT_WITH_ME</h2>
+                    <p class="contact-subtitle">ENG. REWAN MOHAMED // MECHATRONICS ENGINEER // BIO-ENGINEER</p>
+                </div>
+
+                <div class="contact-row">
+                    <!-- WhatsApp -->
+                    <div class="contact-card-navy">
+                        <h3>WHATSAPP</h3>
+                        <p>+20 100 876 3302</p>
+                        <a href="https://wa.me/201008763302" target="_blank" class="cyber-link">SEND_MESSAGE</a>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="contact-card-navy">
+                        <h3>EMAIL</h3>
+                        <p>rewanelbak3@gmail.com</p>
+                        <a href="mailto:rewanelbak3@gmail.com" class="cyber-link">SEND_EMAIL</a>
+                    </div>
+
+                    <!-- LinkedIn -->
+                    <div class="contact-card-navy">
+                        <h3>LINKEDIN</h3>
+                        <p>Rewan Mohamed</p>
+                        <a href="https://www.linkedin.com/in/rewan-mohamed-231a5b276/" target="_blank"
+                            class="cyber-link">VIEW_PROFILE</a>
+                    </div>
+
+                    <!-- GitHub (تمت إضافته) -->
+                    <div class="contact-card-navy">
+                        <h3>GITHUB</h3>
+                        <p>rewan-m07amed</p>
+                        <a href="https://github.com/rewan-m07amed" target="_blank" class="cyber-link">VIEW_REPOS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+</body>
+
+</html>
