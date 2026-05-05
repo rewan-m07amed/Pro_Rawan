@@ -51,23 +51,18 @@
         <!-- 2. الأرقام والإنجازات (مساحة مريحة للعين) -->
         <div class="metrics-grid">
             <div class="metric-box">
-                <h3 class="metric-num">FEA</h3>
-                <p class="metric-desc">Space Frame Stress Analysis</p>
+                <h3 class="metric-desc">Space Frame Stress Analysis</h3>
             </div>
             <div class="metric-box">
-                <h3 class="metric-num">SIM</h3>
-                <p class="metric-desc">Dynamic Brakes Model</p>
+                <h3 class="metric-desc">Dynamic Brakes Model</h3>
+
             </div>
             <div class="metric-box">
-                <h3 class="metric-num">LOAD</h3>
-                <p class="metric-desc">Traction & Load Transfer</p>
+                <h3 class="metric-desc">Traction & Load Transfer</h3>
             </div>
         </div>
 
         <!-- 3. صورة الغلاف الرئيسية (بإطار وتأثير نيون) -->
-        <div class="project-hero-img">
-            <img src="images/asu-racing-hero.jpg" alt="ASU Racing Project - Race Car Design">
-        </div>
 
         <!-- فاصل تقني أنيق يفصل بين الصور وبين بداية الشرح -->
         <div
@@ -75,68 +70,88 @@
         </div>
 
         <!-- 4. مراحل المشروع (بلوكات الشرح الاحترافية) -->
+        <!-- 4. مراحل المشروع (بلوكات الشرح الاحترافية) -->
         <div class="project-phases">
 
+            <!-- Phase 1 -->
             <div class="phase-block">
-                <h3 class="phase-title"><span>&gt;</span> PHASE_01: DYNAMICS_OVERVIEW.sys</h3>
+                <h3 class="phase-title"><span>&gt;</span> PHASE_01: ACADEMY_TRAINING.log</h3>
                 <p>
-                    Racing car design is a complex interplay of various factors, including
-                    <strong>aerodynamics</strong>, <strong>mechanics</strong>, and <strong>tire physics</strong>. To
-                    achieve optimal performance on the track, it is essential to consider how these elements interact to
-                    influence traction, acceleration, braking, and cornering.
+                    My journey with the racing team began by going through a highly competitive and strict selection
+                    process to join the academy, where only a limited number of candidates were accepted. This one-month
+                    intensive program introduced me to the <strong>fundamentals of vehicle systems</strong>, with a
+                    strong emphasis on <strong>braking systems</strong>.
                 </p>
                 <p>
-                    The foundational principle of racing car design is achieving maximum traction between the tires and
-                    the road, known as the <strong>Tyre contact patch</strong>. Additionally, the distribution of weight
-                    on each wheel (<strong>Wheel Loads</strong>) significantly impacts traction, influenced by dynamic
-                    factors like acceleration, braking, and cornering.
+                    During this phase, I was involved in <strong>hands-on assembly tasks</strong>, gaining practical
+                    exposure to how mechanical components are integrated within a complete system. In parallel, I worked
+                    on studying and summarizing technical references, including engineering papers and design manuals,
+                    which helped me build a solid theoretical foundation.
                 </p>
-            </div>
+                <p>
+                    This experience strengthened my understanding of brake system design, safety considerations, and the
+                    constraints specific to motorsport engineering.
+                </p>
 
-            <div class="phase-block">
-                <h3 class="phase-title"><span>&gt;</span> PHASE_02: CHASSIS_STRUCTURE_FEA.exe</h3>
-                <p>
-                    A <strong>space frame chassis</strong> is a structural design based on the <strong>triangulation
-                        principle</strong>. This principle involves connecting structural elements in a triangular
-                    pattern to form a rigid and stable structure.
-                </p>
-                <p>
-                    Consisting of a three-dimensional lattice of interconnected metallic tubular bars, these elements
-                    are joined at nodes to form a rigid structure that can withstand <strong>twisting loads</strong>, as
-                    verified by our Finite Element Analysis (FEA).
-                </p>
-                <!-- صورة الشاسيه بإطار phase-img -->
-                <div class="phase-image-wrapper">
-                    <img src="images/asu-racing-chassis.png" alt="Space Frame Triangulation FEA" class="phase-img">
+                <!-- صور المرحلة الأولى -->
+                <div class="phase-images-grid">
+                    <div class="cyber-window">
+                        <div class="window-header"><span>&gt; DESIGN_FUNDAMENTALS</span></div>
+                        <img src="images/asu-racing-hero.jpg" alt="Race Car Basics Summary">
+                    </div>
+
+                    <div class="cyber-window">
+                        <div class="window-header"><span>&gt; CHASSIS_ANALYSIS_REPORT</span></div>
+                        <img src="images/asu-racing-chassis.png" alt="Chassis Analysis Report">
+                    </div>
                 </div>
             </div>
 
+            <!-- Phase 2 -->
             <div class="phase-block">
-                <h3 class="phase-title"><span>&gt;</span> PHASE_03: BRAKES_SYSTEM_MODELING.dat</h3>
+                <h3 class="phase-title"><span>&gt;</span> PHASE_02: BRAKE_SYSTEM_DEV.exe</h3>
                 <p>
-                    Developed a comprehensive dynamic model (<strong>Brakes_Model_2025</strong>) using
-                    <strong>Simulink</strong> to simulate the braking system's behavior and optimize stopping power.
+                    After successfully completing the academy, I continued with the team for a full year as part of the
+                    brake system design effort. My work focused on analyzing and developing a braking system capable of
+                    performing reliably under dynamic racing conditions.
                 </p>
                 <p>
-                    Conducted a trade-off analysis for caliper options, comparing <strong>Forged Dynalite
-                        Internal</strong> (Front) with options like Dynalite Single IIIA and Honda 600rr (Rear),
-                    balancing performance metrics against cost constraints.
+                    I developed a <strong>MATLAB/Simulink</strong> model to simulate braking performance, enabling the
+                    calculation of braking forces, weight transfer, and stopping distances. This model supported design
+                    validation and informed engineering decisions throughout the development process.
+                </p>
+                <p>
+                    In addition, I conducted brake sizing calculations to ensure the system met both safety and
+                    performance requirements. I also performed <strong>thermal analysis</strong> to evaluate heat
+                    generation and dissipation during high-speed and repeated braking scenarios, addressing critical
+                    challenges such as <strong>brake fade</strong>.
+                </p>
+                <p>
+                    Based on these analyses, I contributed to the selection of key components, including brake discs,
+                    calipers, and pads, ensuring an effective balance between performance, reliability, and durability.
                 </p>
 
-                <!-- صور السيميولينك والفرامل في شاشات Cyber Windows -->
+                <!-- صور المرحلة الثانية -->
                 <div class="phase-images-grid">
                     <div class="cyber-window">
-                        <div class="window-header"><span>&gt; SIMULINK_MODEL.exe</span></div>
+                        <div class="window-header"><span>&gt; SIMULINK_MODEL</span></div>
                         <img src="images/asu-racing-simulink.jpg" alt="Brakes System Simulink Model">
                     </div>
 
                     <div class="cyber-window">
-                        <div class="window-header"><span>&gt; CALIPER_TRADE_OFF.csv</span></div>
+                        <div class="window-header"><span>&gt; CALIPER_TRADE_OFF</span></div>
                         <img src="images/asu-racing-brakes.png" alt="Brakes Caliper Options Trade-off">
                     </div>
                 </div>
             </div>
 
+        </div>
+
+        <!-- Bottom Return Button -->
+        <div style="text-align: center; margin-top: 60px; padding-bottom: 20px;">
+            <a href="index.html" class="back-btn" style="display: inline-block;">
+                &lt;&lt; RETURN_TO_MAIN
+            </a>
         </div>
 
     </div>
