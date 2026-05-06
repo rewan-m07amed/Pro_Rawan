@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+/* ضبط عام لكل العناصر عشان الحواف متكبرش الحجم */
+* {
+  box-sizing: border-box;
+}
+
+/* جعل الصور مرنة وتلقائية الحجم */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* تحويل أي حاجة واخدة عرض ثابت لعرض مرن */
+.container, .wrapper, section {
+  width: 100% !important;
+  max-width: 1200px; /* تقدري تغيري الرقم ده حسب عرض موقعك الأصلي */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 :root {
     --bg-dark: #07090e;
     --panel-bg: rgba(12, 16, 24, 0.75);
@@ -2343,3 +2363,26 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+  /* لو عندك عناصر جنب بعض، الكود ده بيخليها تحت بعض */
+  .row, .flex-container, .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* تصغير الخطوط شوية عشان تناسب الموبايل */
+  h1 { font-size: 1.8rem; }
+  p { font-size: 1rem; }
+
+  /* لو عندك Sidebar (قائمة جانبية) ممكن تخفيها أو تخلي عرضها 100% */
+  .sidebar {
+    width: 100%;
+    display: block; 
+  }
+
+  /* إلغاء أي Float (لو كنتِ مستخدمة الطريقة القديمة في التصميم) */
+  .column {
+    width: 100% !important;
+    float: none !important;
+  }
+}
