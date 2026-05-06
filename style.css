@@ -2272,41 +2272,139 @@ body {
    📱 MOBILE RESPONSIVENESS (تظبيط شاشات الموبايل)
    ========================================= */
 
+/* ==========================================================
+   📱 MASTER MOBILE RESPONSIVENESS (للموقع بالكامل)
+   ========================================================== */
+
 @media (max-width: 768px) {
-
-    /* 1. تصغير اللوجو وتظبيط زواياه عشان يليق مع حجم الموبايل */
-    .cyber-logo {
-        width: 100px !important;
-        height: 100px !important;
-        padding: 10px !important;
-        border-radius: 20px 5px 20px 5px !important;
+    
+    /* 1. منع السكرول الأفقي (عشان الموقع مايلقش يمين وشمال) */
+    html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
-    /* 2. سنترة العنوان واللوجو (نخليهم تحت بعض بدل جنب بعض عشان المساحة) */
-    .project-header>div {
-        flex-direction: column-reverse !important;
-        /* ده بيخلي اللوجو يجي فوق العنوان */
-        justify-content: center !important;
-        text-align: center;
+    * {
+        box-sizing: border-box !important;
     }
 
-    /* 3. تصغير خط عنوان المشروع عشان ما يخرجش بره الشاشة */
-    .project-title {
-        font-size: 1.4rem !important;
-        line-height: 1.4;
+    /* ========================================= */
+    /* 2. الصفحة الرئيسية (البروفايل والتعريف) */
+    /* ========================================= */
+    .hero-section, .about-section, .profile-container, .header-content {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 20px !important;
     }
 
-    /* 4. تظبيط كروت المشاريع (عشان لو الكلام كتير الكارت يطول معاه وميتقصش) */
+    /* سنترة صورة البروفايل الرئيسية */
+    .hero-img, .profile-img, img[alt*="profile"] {
+        width: 180px !important;
+        height: 180px !important;
+        margin: 0 auto 20px auto !important;
+        display: block !important;
+        border-radius: 50% !important; /* لو عايزاها مدورة */
+    }
+
+    /* ========================================= */
+    /* 3. كروت المشاريع والشهادات (السلايدر) */
+    /* ========================================= */
+    section, .panel, .projects-module {
+        width: 95% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding: 15px 10px !important;
+    }
+
     .project-card {
         height: auto !important;
-        min-height: 250px;
+        min-height: 280px !important;
         padding: 20px !important;
     }
 
-    /* 5. تظبيط زرار الرجوع عشان يتسنتر */
+    /* ========================================= */
+    /* 4. سكشن التواصل (Connect With Me) */
+    /* ========================================= */
+    .contact-row {
+        display: flex !important;
+        flex-direction: column !important; /* الكروت تحت بعض */
+        gap: 15px !important;
+    }
+
+    .contact-card-navy {
+        width: 100% !important;
+    }
+
+    /* ========================================= */
+    /* 5. صفحات المشاريع (ASU Racing, Qudrat, IEEE) */
+    /* ========================================= */
+    
+    /* الهيدر واللوجو */
+    .project-header > div {
+        display: flex !important;
+        flex-direction: column-reverse !important; /* اللوجو فوق العنوان */
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 15px !important;
+    }
+
+    .cyber-logo {
+        width: 100px !important;
+        height: 100px !important;
+        margin: 0 auto !important;
+    }
+
+    .project-title {
+        font-size: 1.3rem !important;
+        line-height: 1.4 !important;
+    }
+
     .back-btn {
         display: block !important;
-        text-align: center;
-        margin-bottom: 30px !important;
+        text-align: center !important;
+        margin: 0 auto 20px auto !important;
+        width: fit-content;
+    }
+
+    /* شريط الخلاصة (CORE_FOCUS) */
+    .quick-info-bar {
+        display: flex !important;
+        flex-direction: column !important; /* تحت بعض */
+        gap: 10px !important;
+        text-align: center !important;
+    }
+
+    .info-item {
+        width: 100% !important;
+        border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+        padding-bottom: 10px;
+    }
+
+    /* شبكة الأرقام والإنجازات */
+    .metrics-grid {
+        display: flex !important;
+        flex-direction: column !important; /* تحت بعض */
+        gap: 15px !important;
+    }
+
+    .metric-box {
+        width: 100% !important;
+    }
+
+    /* صور مراحل المشروع (Phase Images) */
+    .phase-images-grid {
+        display: flex !important;
+        flex-direction: column !important; /* تحت بعض */
+        gap: 20px !important;
+    }
+
+    .cyber-window {
+        width: 100% !important;
+        margin: 0 !important;
     }
 }
