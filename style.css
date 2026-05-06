@@ -2269,100 +2269,83 @@ body {
 }
 
 /* =========================================
-   📱 MOBILE RESPONSIVENESS (القاضية لمشاكل الموبايل)
+   📱 MOBILE RESPONSIVENESS (Safe & Clean)
    ========================================= */
 
-/* 1. منع الشاشة من الحركة يمين وشمال (أهم سطر) */
-html,
-body {
-    overflow-x: hidden !important;
-    width: 100%;
-    max-width: 100vw;
-}
-
 @media (max-width: 768px) {
-    /* ========================================= */
-    /* 8. سنترة صورة البروفايل الرئيسية في الموبايل */
-    /* ========================================= */
 
-    /* لو الصورة محطوطة جوه كولوم (عمود) أو ديف، ده هيجيبه في النص */
+    /* 1. منع السكرول الجانبي (الأفقي) عشان الشاشة ماتتحركش يمين وشمال */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* 2. تظبيط الهيدر في صفحات المشاريع (قدرات، IEEE، ASU) */
+    .project-header>div {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        /* بيجيب اللوجو فوق العنوان */
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center;
+        gap: 15px;
+    }
+
+    /* 3. تظبيط اللوجو السايبر بانك (يصغر ويتسنتر) */
+    .cyber-logo {
+        width: 100px !important;
+        height: 100px !important;
+        margin: 0 auto !important;
+        /* بيجيبه في النص بالظبط */
+    }
+
+    /* تصغير حجم خط العنوان بتاع المشروع */
+    .project-title {
+        font-size: 1.3rem !important;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    /* سنترة زرار الرجوع */
+    .back-btn {
+        display: block !important;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* 4. تظبيط كروت المشاريع (عشان الكلام ميبانش مقطوع لو الشاشة صغيرة) */
+    .project-card {
+        height: auto !important;
+        /* الكارت بيطول على حسب كمية الكلام */
+        min-height: 250px;
+        padding: 20px !important;
+    }
+
+    /* 5. سنترة صورة البروفايل الرئيسية في الصفحة الأولى */
+    /* أنا ضفت أشهر الكلاسات عشان تشتغل معاكي أوتوماتيك */
+    .hero-img,
+    .profile-img,
+    .about-image img,
+    img[alt*="profile"] {
+        display: block !important;
+        margin: 0 auto 20px auto !important;
+        /* بيجيب الصورة في النص ويعمل مسافة تحتها */
+        max-width: 80% !important;
+        /* بيصغر الصورة شوية عشان متكنش ضخمة */
+        height: auto !important;
+    }
+
+    /* لو صورة البروفايل محطوطة جنب كلام، الكود ده هيجيبهم تحت بعض ومتسنترين */
     .hero-section,
-    .about-section,
+    .about-content,
     .profile-container {
-        text-align: center !important;
         display: flex !important;
         flex-direction: column !important;
+        text-align: center !important;
         align-items: center !important;
     }
 
-    /* ده كود الصورة نفسها عشان تيجي في النص بالمللي */
-    .hero-img,
-    .profile-img,
-    .about-img {
-        display: block !important;
-        margin: 0 auto 20px auto !important;
-        /* بيسنترها وبيعمل مسافة تحتها */
-        width: 80% !important;
-        /* بيصغرها شوية عشان متكنش ضخمة على الموبايل */
-        max-width: 250px !important;
-    }
-
-    /* 2. تظبيط عرض السكاشن كلها عشان متخرجش بره الشاشة */
-    section,
-    .panel,
-    .projects-module {
-        width: 95% !important;
-        /* بنسيب مسافة صغيرة من الجنبين */
-        margin-left: auto !important;
-        margin-right: auto !important;
-        padding: 10px !important;
-    }
-
-    /* 3. تظبيط اللوجوهات (تصغيرها عشان متزحمش الشاشة) */
-    .cyber-logo {
-        width: 90px !important;
-        height: 90px !important;
-        padding: 8px !important;
-        border-radius: 15px 5px 15px 5px !important;
-        margin: 10px auto !important;
-        /* سنترة اللوجو */
-        display: block !important;
-    }
-
-    /* 4. سنترة العنوان واللوجو في صفحات المشاريع */
-    .project-header div {
-        flex-direction: column-reverse !important;
-        /* اللوجو فوق والعنوان تحت */
-        justify-content: center !important;
-        text-align: center !important;
-    }
-
-    .project-title {
-        font-size: 1.2rem !important;
-        /* تصغير الخط */
-        line-height: 1.5 !important;
-        text-align: center !important;
-        margin-top: 15px !important;
-    }
-
-    /* 5. تظبيط كروت السلايدر (عشان الكلام ميتزنقش) */
-    .project-card {
-        height: auto !important;
-        min-height: 250px !important;
-        padding: 15px !important;
-    }
-
-    /* 6. تظبيط شبكة الأرقام والإنجازات (لو موجودة) */
-    .metrics-grid {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
-        /* يخليهم تحت بعض بدل جنب بعض */
-        gap: 15px !important;
-    }
-
-    /* 7. تظبيط سكشن التواصل (الكروت تحت بعض) */
+    /* 6. سكشن التواصل (الكروت تنزل تحت بعض بدل ما تزنق الشاشة) */
     .contact-row {
         grid-template-columns: 1fr !important;
-        /* كل كارت ياخد عرض الشاشة */
     }
 }
