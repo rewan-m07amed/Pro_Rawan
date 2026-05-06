@@ -2268,3 +2268,73 @@ body {
     transform: scale(1.05);
 }
 
+/* =========================================
+   📱 الموبايل (علاج مشكلة خروج الكارت والاسم عن الشاشة)
+   ========================================= */
+
+@media (max-width: 768px) {
+    
+    /* 1. السيطرة على عرض الشاشة ومنع السكرول الأفقي تماماً */
+    html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    * {
+        box-sizing: border-box !important;
+        max-width: 100% !important; /* بيمنع أي عنصر يخرج بره الشاشة */
+    }
+
+    /* 2. تظبيط شريط القوائم اللي فوق (الناف بار) */
+    header, nav, .nav-links {
+        display: flex !important;
+        flex-wrap: wrap !important; /* ده بيخليهم ينزلوا سطر جديد لو الشاشة ضيقة */
+        justify-content: center !important;
+        gap: 10px !important;
+        font-size: 12px !important; /* تصغير خط اللينكات */
+        padding: 10px !important;
+    }
+
+    /* 3. سنترة الكارت الرئيسي اللي فيه صورتك */
+    .panel, .container, .hero-section, main {
+        width: 95% !important; /* الكارت هياخد 95% من الشاشة ويسيب حواف صغيرة */
+        margin: 15px auto !important; /* السحر اللي بيجيبه في النص بالظبط */
+        padding: 20px !important;
+        display: block !important;
+    }
+
+    /* 4. تصغير اسمك والتايتل عشان ميبقوش مقصوصين */
+    h1, .hero-title, .name {
+        font-size: 1.6rem !important; /* تصغير الاسم */
+        text-align: center !important;
+        width: 100% !important;
+        word-wrap: break-word !important;
+        margin-bottom: 10px !important;
+    }
+
+    h2, .subtitle, .role {
+        font-size: 1rem !important; /* تصغير التخصص */
+        text-align: center !important;
+        width: 100% !important;
+        word-wrap: break-word !important;
+    }
+
+    /* 5. سنترة الصورة بتاعتك */
+    .hero-img, .profile-img {
+        margin: 0 auto 20px auto !important;
+        display: block !important;
+    }
+
+    /* 6. تظبيط بوكس الـ CORE_DIRECTIVE عشان ميزقش الكارت */
+    .directive-box, .terminal-box {
+        display: flex !important;
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 15px !important;
+        width: 100% !important;
+    }
+}
+
