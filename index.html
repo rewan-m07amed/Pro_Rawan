@@ -318,6 +318,7 @@
         </section>
 
         <!-- Interactive Project Carousel -->
+        <!-- Projects Section (تم تحديد العرض والسنترة هنا) -->
         <section id="projects" class="panel projects-module">
             <div class="panel-corners"></div>
             <div class="panel-header">
@@ -327,32 +328,15 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <!-- Project 1 -->
-                    <!-- Project 1 -->
                     <div class="swiper-slide project-slide">
-                        <div class="project-card"
-                            style="display: flex; flex-direction: column; background: #06101d; border: 1px solid rgba(0, 243, 255, 0.2); height: 500px; overflow: hidden; border-radius: 8px;">
-
-                            <!-- حاوية الصورة: خليناها 50% من الكارت وعملنا زووم للوجو -->
-                            <div class="project-img-top"
-                                style="height: 50%; background: #fff; display: flex; align-items: center; justify-content: center; width: 100%; overflow: hidden;">
-                                <img src="images/asu-racing-logo.jpg" alt="ASU Racing"
-                                    style="width: 110%; height: 110%; object-fit: contain; transform: scale(1.3); transition: transform 0.3s ease;">
-                                <!-- transform: scale(1.3) هو اللي بيعمل الزووم اللي طلبتيه -->
-                            </div>
-
-                            <!-- منطقة البيانات: النصف السفلي متوزع بانتظام -->
-                            <div class="slide-content"
-                                style="height: 50%; padding: 25px; background: rgba(12, 16, 24, 0.95); display: flex; flex-direction: column; justify-content: space-between;">
-                                <div>
-                                    <h3
-                                        style="color: #ffb300; margin: 0 0 10px 0; font-family: 'Orbitron', sans-serif; font-size: 1.4rem;">
-                                        ASU RACING</h3>
-                                    <p style="color: #8b9bb4; font-size: 0.95rem; line-height: 1.5; margin: 0;">Formula
-                                        Student Engineering & Optimization</p>
-                                </div>
-
-                                <a href="asu-racing.html" class="cyber-btn"
-                                    style="width: fit-content; padding: 10px 25px; margin-top: 15px;">VIEW_DATA</a>
+                        <div class="project-card">
+                            <div class="project-overlay"></div>
+                            <!-- محتوى الكارت -->
+                            <div class="slide-content" style="padding: 20px; background: #0a0a0a;">
+                                <h3 style="color: #ffb300; text-shadow: 0 0 8px #ffb300; margin-top: 0;">ASU RACING</h3>
+                                <p style="color: #aaa; margin-bottom: 20px;">Formula Student Engineering & Optimization
+                                </p>
+                                <a href="asu-racing.html" class="cyber-btn">VIEW_DATA</a>
                             </div>
                         </div>
                     </div>
@@ -386,47 +370,45 @@
         </section>
     </main>
 
-    <!-- 1. استدعاء مكتبة Swiper أولاً -->
+    <!-- 1. Include Swiper library first -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- 2. سيكشن المشاريع (لازم يكون بره تاق السكريبت) -->
+    <!-- 2. Projects Section (Must be outside the script tag) -->
     <div class="projects-module swiper">
         <div class="swiper-wrapper">
-            <!-- الكروت بتاعتك هنا -->
+            <!-- Your cards go here -->
         </div>
 
-        <!-- الأسهم الجانبية -->
+        <!-- Navigation Arrows -->
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
     </div>
 
-    <!-- 3. استدعاء ملف البرمجة بتاعك في الآخر -->
+    <!-- 3. Include your main script file at the end -->
     <script src="script.js"></script>
 
-    <!-- 4. تفعيل الحركة (Navigation) -->
+    <!-- 4. Initialize Swiper Navigation -->
     <script>
         const swiper = new Swiper('.projects-module', {
             loop: true,
-            // تفعيل الأسهم برمجياً
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-            // باقي إعداداتك (slidesPerView, pagination, etc.)
         });
     </script>
 
-    <!-- Interactive Certificates Carousel -->
-    <section id="certificates" class="panel projects-module" style="margin-top: 50px;">
+    <!-- Certificates Section (تم تحديد نفس العرض ونفس السنترة هنا) -->
+    <section id="certificates" class="panel projects-module"
+        style="max-width: 1100px; margin-top: 50px; margin-left: auto; margin-right: auto;">
         <div class="panel-corners"></div>
         <div class="panel-header">
-            <span class="panel-title">&gt;&gt; ACADEMIC_ARCHIVE</span>
+            <span class="panel-title">&gt;&gt; CERTIFICATES</span>
         </div>
 
-        <!-- السلايدر الخاص بالشهادات -->
+        <!-- Certificates Swiper Slider -->
         <div class="swiper certSwiper">
             <div class="swiper-wrapper">
-
                 <!-- 1. NASA -->
                 <div class="swiper-slide project-slide">
                     <div class="project-card"
@@ -534,14 +516,13 @@
                         </div>
                     </div>
                 </div>
-
             </div>
             <!-- Pagination -->
             <div class="swiper-pagination"></div>
         </div>
     </section>
 
-    <!-- كود التشغيل المعزول مباشرة تحت السكشن -->
+    <!-- Isolated initialization script directly below the section -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const isolatedCertSwiper = new Swiper(".certSwiper", {
@@ -574,52 +555,71 @@
         });
     </script>
 
+    <!-- Contact Section (تم تحديد نفس العرض ونفس السنترة هنا أيضاً) -->
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="contact-frame cyber-border">
-                <div class="contact-header">
-                    <h2 class="glitch-text" data-text="CONNECT_WITH_ME">CONNECT_WITH_ME</h2>
-                    <p class="contact-subtitle">ENG. REWAN MOHAMED // MECHATRONICS ENGINEER // BIO-ENGINEER</p>
+    <section id="contact" class="panel projects-module"
+        style="max-width: 1100px; margin-top: 50px; margin-bottom: 50px; margin-left: auto; margin-right: auto;">
+
+        <!-- Panel Corners (عشان ياخد نفس شكل الزوايا المقطوعة زي اللي فوق) -->
+        <div class="panel-corners"></div>
+
+        <!-- Panel Header (نفس شكل العنوان بالظبط) -->
+        <div class="panel-header">
+            <span class="panel-title">&gt;&gt; CONNECT_WITH_ME</span>
+        </div>
+
+        <!-- Inner Content Area -->
+        <div style="padding: 40px 20px;">
+
+            <div style="text-align: center; margin-bottom: 40px;">
+                <p class="contact-subtitle"
+                    style="color: #00ffff; font-family: 'Orbitron', sans-serif; letter-spacing: 2px;">ENG. REWAN MOHAMED
+                    // MECHATRONICS ENGINEER // BIO-ENGINEER</p>
+            </div>
+
+            <!-- Contact Cards Grid -->
+            <div class="contact-row"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px;">
+
+                <!-- WhatsApp -->
+                <div class="contact-card-navy"
+                    style="background: rgba(12, 16, 24, 0.95); border: 1px solid rgba(0, 243, 255, 0.2); border-radius: 8px; padding: 25px; text-align: center; transition: 0.3s;">
+                    <h3 style="color: #ffb300; font-family: 'Orbitron', sans-serif; margin-bottom: 10px;">WHATSAPP</h3>
+                    <p style="color: #8b9bb4; margin-bottom: 20px; font-size: 0.95rem;">+20 100 876 3302</p>
+                    <a href="https://wa.me/201008763302" target="_blank" class="cyber-btn"
+                        style="padding: 8px 15px; font-size: 0.85rem;">SEND_MESSAGE</a>
                 </div>
 
-                <div class="contact-row">
-                    <!-- WhatsApp -->
-                    <div class="contact-card-navy">
-                        <h3>WHATSAPP</h3>
-                        <p>+20 100 876 3302</p>
-                        <a href="https://wa.me/201008763302" target="_blank" class="cyber-link">SEND_MESSAGE</a>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="contact-card-navy">
-                        <h3>EMAIL</h3>
-                        <p>rewanelbak3@gmail.com</p>
-                        <a href="mailto:rewanelbak3@gmail.com" class="cyber-link">SEND_EMAIL</a>
-                    </div>
-
-                    <!-- LinkedIn -->
-                    <div class="contact-card-navy">
-                        <h3>LINKEDIN</h3>
-                        <p>Rewan Mohamed</p>
-                        <a href="https://www.linkedin.com/in/rewan-mohamed-231a5b276/" target="_blank"
-                            class="cyber-link">VIEW_PROFILE</a>
-                    </div>
-
-                    <!-- GitHub (تمت إضافته) -->
-                    <div class="contact-card-navy">
-                        <h3>GITHUB</h3>
-                        <p>rewan-m07amed</p>
-                        <a href="https://github.com/rewan-m07amed" target="_blank" class="cyber-link">VIEW_REPOS</a>
-                    </div>
+                <!-- Email -->
+                <div class="contact-card-navy"
+                    style="background: rgba(12, 16, 24, 0.95); border: 1px solid rgba(0, 243, 255, 0.2); border-radius: 8px; padding: 25px; text-align: center; transition: 0.3s;">
+                    <h3 style="color: #ffb300; font-family: 'Orbitron', sans-serif; margin-bottom: 10px;">EMAIL</h3>
+                    <p style="color: #8b9bb4; margin-bottom: 20px; font-size: 0.95rem;">rewanelbak3@gmail.com</p>
+                    <a href="mailto:rewanelbak3@gmail.com" class="cyber-btn"
+                        style="padding: 8px 15px; font-size: 0.85rem;">SEND_EMAIL</a>
                 </div>
+
+                <!-- LinkedIn -->
+                <div class="contact-card-navy"
+                    style="background: rgba(12, 16, 24, 0.95); border: 1px solid rgba(0, 243, 255, 0.2); border-radius: 8px; padding: 25px; text-align: center; transition: 0.3s;">
+                    <h3 style="color: #ffb300; font-family: 'Orbitron', sans-serif; margin-bottom: 10px;">LINKEDIN</h3>
+                    <p style="color: #8b9bb4; margin-bottom: 20px; font-size: 0.95rem;">Rewan Mohamed</p>
+                    <a href="https://www.linkedin.com/in/rewan-mohamed-231a5b276/" target="_blank" class="cyber-btn"
+                        style="padding: 8px 15px; font-size: 0.85rem;">VIEW_PROFILE</a>
+                </div>
+
+                <!-- GitHub -->
+                <div class="contact-card-navy"
+                    style="background: rgba(12, 16, 24, 0.95); border: 1px solid rgba(0, 243, 255, 0.2); border-radius: 8px; padding: 25px; text-align: center; transition: 0.3s;">
+                    <h3 style="color: #ffb300; font-family: 'Orbitron', sans-serif; margin-bottom: 10px;">GITHUB</h3>
+                    <p style="color: #8b9bb4; margin-bottom: 20px; font-size: 0.95rem;">rewan-m07amed</p>
+                    <a href="https://github.com/rewan-m07amed" target="_blank" class="cyber-btn"
+                        style="padding: 8px 15px; font-size: 0.85rem;">VIEW_REPOS</a>
+                </div>
+
             </div>
         </div>
     </section>
-
-
-
-
 
 </body>
 
