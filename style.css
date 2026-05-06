@@ -2,22 +2,26 @@
 
 /* ضبط عام لكل العناصر عشان الحواف متكبرش الحجم */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* جعل الصور مرنة وتلقائية الحجم */
-img, video {
-  max-width: 100%;
-  height: auto;
-  display: block;
+img,
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* تحويل أي حاجة واخدة عرض ثابت لعرض مرن */
-.container, .wrapper, section {
-  width: 100% !important;
-  max-width: 1200px; /* تقدري تغيري الرقم ده حسب عرض موقعك الأصلي */
-  margin: 0 auto;
-  padding: 0 15px;
+.container,
+.wrapper,
+section {
+    width: 100% !important;
+    max-width: 1200px;
+    /* تقدري تغيري الرقم ده حسب عرض موقعك الأصلي */
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 :root {
@@ -2288,101 +2292,203 @@ body {
     transform: scale(1.05);
 }
 
-/* =========================================
-   📱 الموبايل (الإصلاح النهائي للسلايدر والكروت)
-   ========================================= */
-
+/* ==============================================================
+   📱 باتش إصلاح الأبعاد الثابتة للموبايل (بدون المساس بالتصميم)
+   ============================================================== */
 @media (max-width: 768px) {
-    
-    /* 1. السيطرة التامة على عرض الشاشة */
-    html, body {
+
+    /* 1. قفل العرض تماماً لمنع الخروج عن الشاشة */
+    html,
+    body {
         overflow-x: hidden !important;
         width: 100% !important;
         max-width: 100vw !important;
     }
 
-    /* 2. تظبيط الاسم عشان ميبقاش مقصوص */
-    h1, .hero-title, .name {
-        font-size: 1.3rem !important; /* صغرناه شوية عشان يجي مرتاح */
-        letter-spacing: 1px !important;
+    * {
+        box-sizing: border-box !important;
+        max-width: 100vw !important;
+    }
+
+    /* 2. تحويل الشبكات (Grids) لأعمدة عشان متضربش بالعرض */
+    .dashboard,
+    .metrics-grid,
+    .phase-images-grid,
+    .contact-row,
+    .profile-content {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        padding: 0 10px !important;
+        margin-top: 20px !important;
+    }
+
+    /* 3. إصلاح منطقة الصورة (Avatar) والدوائر */
+    .avatar-container {
+        width: 220px !important;
+        height: 220px !important;
+        margin: 0 auto 30px auto !important;
+    }
+
+    .radar-ring,
+    .inner-ring {
+        max-width: 250px !important;
+        max-height: 250px !important;
+    }
+
+    /* 4. إصلاح النصوص الكبيرة واللوجو عشان م تتقصش */
+    .neon-text {
+        font-size: 2.2rem !important;
+        white-space: normal !important;
         word-wrap: break-word !important;
         text-align: center !important;
     }
 
-    /* 3. تظبيط بوكس CORE_DIRECTIVE (عشان الكلام ينزل تحت العنوان وميتزنقش) */
-    /* افترضت إن الكلاس بتاعه directive-box أو حاجة شبهها */
-    .directive-box, .terminal-box, .directive-container {
-        display: flex !important;
-        flex-direction: column !important; /* السحر هنا: هينزل الكلام تحت الكلمة */
-        align-items: flex-start !important; /* يجيبهم على الشمال */
-        text-align: left !important;
-        padding: 15px !important;
-        gap: 10px !important;
-    }
-
-    /* 4. تظبيط السلايدر (المشاريع والشهادات) عشان ميخرجش بره الشاشة */
-    .swiper, .swiper-container {
-        width: 100% !important;
-        max-width: 100vw !important;
-        padding: 0 15px !important; /* مسافة عشان الأسهم تبان */
-        box-sizing: border-box !important;
-    }
-
-    .swiper-slide {
-        width: 100% !important; 
-        display: flex !important;
-        justify-content: center !important;
-        box-sizing: border-box !important;
-    }
-
-    /* تظبيط عرض الكارت نفسه */
-    .project-card, .certificate-card {
-        width: 100% !important;
-        max-width: 320px !important; /* عشان ميبقاش ممطوط أوي */
+    .cyber-logo {
+        width: 140px !important;
+        /* تصغير اللوجو الضخم في الموبايل */
+        height: 140px !important;
         margin: 0 auto !important;
     }
 
-    /* 5. تظبيط صور الشهادات (IELTS) عشان تصغر على قد الموبايل */
-    .swiper-slide img {
-        max-width: 100% !important;
+    /* 5. إصلاح الـ Tabs (Profile, Motive, Vision) */
+    .terminal-controls.top-tabs {
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 8px !important;
+    }
+
+    .cyber-tab {
+        width: 100% !important;
+        border-radius: 6px !important;
+        /* إغلاق الإطار من كل الجوانب */
+    }
+
+    /* 6. إصلاح الـ Quote Badge (الكلام المائل اللي كان بيتقص) */
+    .system-status.quote-badge {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        width: 100% !important;
         height: auto !important;
-        object-fit: contain !important;
     }
 
-    /* 6. تظبيط زراير الـ ABOUT (Profile, Motive, Vision) */
-    .about-tabs, .tabs-container {
-        display: flex !important;
-        flex-wrap: wrap !important; /* لو مفيش مكان ينزلوا سطر جديد */
+    /* 7. إصلاح كروت المشاريع والشهادات */
+    .swiper-slide {
+        width: 100% !important;
+        max-width: 320px !important;
+        margin: 0 auto !important;
+    }
+
+    /* 8. إصلاح كروت التواصل (Contact Cards) */
+    .contact-card-navy,
+    .contact-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: unset !important;
+        margin-bottom: 15px !important;
+    }
+
+    /* 9. القائمة العلوية (Navbar) */
+    .cyber-navbar.veil-navbar {
+        flex-direction: column !important;
+        padding-bottom: 25px !important;
+    }
+
+    .nav-links {
+        flex-wrap: wrap !important;
         justify-content: center !important;
-        gap: 5px !important;
+        gap: 10px !important;
+        margin-top: 10px !important;
     }
 
-    .tab-btn, .tab-link {
-        padding: 8px 10px !important;
-        font-size: 0.8rem !important; /* تصغير الخط عشان يكفوا جنب بعض */
+    .nav-item::after {
+        display: none !important;
+        /* إخفاء علامات // في الموبايل لتوفير المساحة */
     }
 }
 
-@media (max-width: 768px) {
-  /* لو عندك عناصر جنب بعض، الكود ده بيخليها تحت بعض */
-  .row, .flex-container, .grid-container {
-    display: flex;
-    flex-direction: column;
-  }
+/* =========================================
+   تظبيط أماكن أسهم السلايدر (Next & Prev)
+   ========================================= */
 
-  /* تصغير الخطوط شوية عشان تناسب الموبايل */
-  h1 { font-size: 1.8rem; }
-  p { font-size: 1rem; }
+/* 1. ندي مساحة من تحت للكروت عشان الأسهم تبان وماتغطيش على الكلام */
+.swiper,
+.swiper-container {
+    position: relative !important;
+    padding-bottom: 60px !important;
+}
 
-  /* لو عندك Sidebar (قائمة جانبية) ممكن تخفيها أو تخلي عرضها 100% */
-  .sidebar {
-    width: 100%;
-    display: block; 
-  }
+/* 2. نلغي مكان الأسهم الديفولت (اللي في نص الشاشة) وننزلهم تحت */
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute !important;
+    top: auto !important;
+    /* بيلغي التوسيط العمودي */
+    bottom: 0px !important;
+    /* بينزلهم تحت خالص */
+    width: 45px !important;
+    height: 45px !important;
+    border: 2px solid #00ffff !important;
+    /* الإطار اللبني */
+    border-radius: 50% !important;
+    /* بيخليهم شكل دايرة */
+    background: rgba(0, 0, 0, 0.6) !important;
+    /* خلفية شفافة شوية */
+    color: #00ffff !important;
+    /* لون السهم نفسه */
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.4) !important;
+    /* إضاءة نيون خفيفة */
+    z-index: 20 !important;
+    transition: all 0.3s ease;
+}
 
-  /* إلغاء أي Float (لو كنتِ مستخدمة الطريقة القديمة في التصميم) */
-  .column {
-    width: 100% !important;
-    float: none !important;
-  }
+/* تأثير لما تقفي عليهم بالماوس */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background: rgba(0, 255, 255, 0.2) !important;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8) !important;
+}
+
+/* 3. نظبط مكان السهم الشمال */
+.swiper-button-prev {
+    left: 10px !important;
+}
+
+/* 4. نظبط مكان السهم اليمين */
+.swiper-button-next {
+    right: 10px !important;
+}
+
+/* تصغير حجم أيقونة السهم نفسها عشان تليق مع الدايرة */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+
+/* الخيار 1: إزالة الإطار الأبيض تمامًا */
+.cyber-logo.full-frame-photo {
+    border: 2px solid #00e5ff;
+    /* الحفاظ على لون الإطار الذهبي */
+    border-radius: 15px;
+    /* الحفاظ على الزوايا المدورة */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    /* الحفاظ على التوهج */
+
+    /* أهم تعديل لإزالة الإطار الأبيض: */
+    padding: 0;
+    /* إزالة كل الحشو الداخلي الأبيض */
+
+    /* تعديلات لضمان ملء الصورة للمساحة */
+    display: block;
+    margin: 0 auto;
+    /* التوسيط */
+    max-width: 100%;
+    /* التأكد من أنها تملأ العرض */
+    height: auto;
+    /* الحفاظ على نسبة العرض إلى الارتفاع */
+
+    /* هذا السطر مهم جداً لجعل الصورة تملأ الإطار تمامًا */
+    object-fit: cover;
+    /* قد يتم قص بعض الحواف بشكل طفيف لملء الإطار */
 }
